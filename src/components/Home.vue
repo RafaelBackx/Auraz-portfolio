@@ -20,8 +20,34 @@
                 </ul>
             </div>
             <!-- camera layout -->
+            <!-- Top left-->
             <div id="top-left" class="camera-anchor">
                 <p class="mb-50 name font-l">Evro Visuals</p>
+                <svg class="camera-anchor-lines landscape" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                    <line x1="0" x2="200" y1="0" y2="0" />
+                    <line x1="0" x2="0" y1="0" y2="100" />
+                </svg>
+                <svg class="camera-anchor-lines portrait" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                    <line x1="0" x2="100" y1="0" y2="0" />
+                    <line x1="0" x2="0" y1="0" y2="150" />
+                </svg>
+            </div>
+            <!-- Top right -->
+            <div id="top-right" class="camera-anchor">
+                <div class="battery mb-50">
+                    <img src="../assets/images/battery.png">
+                    <p class="font-l">
+                        64%
+                    </p>
+                </div>
+                <svg class="camera-anchor-lines landscape" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMin meet">
+                    <line x1="0" x2="200" y1="0" y2="0" />
+                    <line x1="200" x2="200" y1="0" y2="100" />
+                </svg>
+                <svg class="camera-anchor-lines portrait" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMin meet">
+                    <line x1="0" x2="100" y1="0" y2="0"/>
+                    <line x1="100" x2="100" y1="0" y2="150"/>
+                </svg>
             </div>
         </div>
     </div>
@@ -76,16 +102,47 @@ export default {
     #social-media > p {
         transform: rotate(180deg);
         writing-mode: vertical-lr;
-        padding: 10px;
     }
 
     #side-nav{
-        padding: 10px;
         margin: auto;
         grid-area: 2/5/3/6;
     }
 
     #top-left{
         grid-area: 1/2/2/3;
+    }
+
+    #top-right{
+        grid-area: 1/4/2/5;
+    }
+
+    .landscape{
+        display: none;
+    }
+
+    .camera-anchor{
+        display: flex;
+        gap: 1vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .camera-anchor-lines{
+        flex-basis: 75%;
+        stroke-width: 7px;
+        stroke: #fff;
+        max-width: 100%;
+    }
+
+    .battery{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1vw;
+    }
+
+    .battery > img{
+        width: 32px;
     }
 </style>
