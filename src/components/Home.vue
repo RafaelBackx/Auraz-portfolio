@@ -22,7 +22,7 @@
             <!-- camera layout -->
             <!-- Top left-->
             <div id="top-left" class="camera-anchor">
-                <p class="mb-50 name font-l">Evro Visuals</p>
+                <p class="name font-l">Evro Visuals</p>
                 <svg class="camera-anchor-lines landscape" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                     <line x1="0" x2="200" y1="0" y2="0" />
                     <line x1="0" x2="0" y1="0" y2="100" />
@@ -34,7 +34,7 @@
             </div>
             <!-- Top right -->
             <div id="top-right" class="camera-anchor">
-                <div class="battery mb-50">
+                <div class="battery">
                     <img src="../assets/images/battery.png">
                     <p class="font-l">
                         64%
@@ -63,7 +63,7 @@
                     <line x1="0" x2="100" y1="150" y2="150"/>
                     <line x1="0" x2="0" y1="0" y2="150"/>
                 </svg>
-                <p class="mt-50 font-l">1/125</p>
+                <p class="font-l text-align-left">1/125</p>
             </div>
             <!-- Bottom center -->
             <div id="bottom-center">
@@ -85,7 +85,7 @@
                     <line x1="0" x2="100" y1="150" y2="150"/>
                     <line x1="100" x2="100" y1="0" y2="150"/>
                 </svg>
-                <p class="mt-50 text-align-right font-l">ISO 800</p>
+                <p class="text-align-right font-l">ISO 800</p>
             </div>
         </div>
     </div>
@@ -232,7 +232,25 @@ export default {
         padding: 0.1em;
     }
 
+    .mb-50{
+        margin-bottom: 0.5em;
+    }
+
     .color-black{
         color: #000;
     }
+
+    .text-align-left{
+        text-align: left;
+    }
+
+    .text-align-right{
+        text-align: right;
+    }
+
+    /* @media screen and (max-width: 550px) {
+        #content{
+            background-color: blue;
+        }
+    } */
 </style>
