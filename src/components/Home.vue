@@ -49,6 +49,44 @@
                     <line x1="100" x2="100" y1="0" y2="150"/>
                 </svg>
             </div>
+            <!-- Center -->
+            <div id="center">
+                <img src="../assets/images/profile.png" alt="profielfoto">
+            </div>
+            <!-- Bottom left -->
+            <div id="bottom-left" class="bottom camera-anchor">
+                <svg class="camera-anchor-lines landscape" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMax meet">
+                    <line x1="0" x2="200" y1="100" y2="100" />
+                    <line x1="0" x2="0" y1="0" y2="100" />
+                </svg>
+                <svg class="camera-anchor-lines portrait" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                    <line x1="0" x2="100" y1="150" y2="150"/>
+                    <line x1="0" x2="0" y1="0" y2="150"/>
+                </svg>
+                <p class="mt-50 font-l">1/125</p>
+            </div>
+            <!-- Bottom center -->
+            <div id="bottom-center">
+                <p class="font-l">
+                    F2.8
+                </p>
+                <div class="bottom-center-text">
+                    <p class="bg-white color-black p-1 font-l">M.M.</p>
+                    <p class="font-l">-1.7</p>
+                </div>
+            </div>
+            <!-- Bottom right -->
+            <div id="bottom-right" class="bottom camera-anchor">
+                <svg class="camera-anchor-lines landscape" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
+                    <line x1="0" x2="200" y1="100" y2="100" />
+                    <line x1="200" x2="200" y1="0" y2="100" />
+                </svg>
+                <svg class="camera-anchor-lines portrait" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMin meet">
+                    <line x1="0" x2="100" y1="150" y2="150"/>
+                    <line x1="100" x2="100" y1="0" y2="150"/>
+                </svg>
+                <p class="mt-50 text-align-right font-l">ISO 800</p>
+            </div>
         </div>
     </div>
 </template>
@@ -65,11 +103,13 @@ export default {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
     }
 
     #header{
         width: 100%;
+        max-height: 10vh;
     }
 
     #header > ul{
@@ -88,10 +128,11 @@ export default {
 
     #content{
         flex-grow: 1;
-        width: 100%;
         display: grid;
         grid-template-columns: 1fr 4fr 8fr 4fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
+        max-height: 90vh;
+        max-width: 95vw;
     }
 
     #social-media{
@@ -115,6 +156,32 @@ export default {
 
     #top-right{
         grid-area: 1/4/2/5;
+    }
+
+    #center{
+        grid-area: 2/3/3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bottom-left{
+        grid-area: 3/2/4/3;
+    }
+
+    #bottom-center{
+        grid-area: 3/3/4/4;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    #bottom-right{
+        grid-area: 3/4/4/5;
+    }
+
+    .bottom{
+        justify-content: flex-end !important;
     }
 
     .landscape{
@@ -144,5 +211,28 @@ export default {
 
     .battery > img{
         width: 32px;
+    }
+
+    #center > img{
+        border-radius: 50%;
+        border: 5px solid #D2A307;
+        max-height: 20vh;
+        width: auto;
+    }
+
+    .bottom-center-text{
+        display: flex;
+    }
+
+    .bg-white{
+        background-color: #fff;
+    }
+
+    .p-1{
+        padding: 0.1em;
+    }
+
+    .color-black{
+        color: #000;
     }
 </style>
