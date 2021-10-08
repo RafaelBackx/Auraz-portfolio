@@ -2,15 +2,14 @@
     <div id="home">
         <div id="header">
             <ul>
-                <li><a class="font-xl" href="#video">Video</a></li>
-                <li><a class="font-xl" href="contact">Contact</a></li>
-                <li><a class="font-xl" href="photo">Photo</a></li>
+                <li><a class="font-l" href="#video">Video</a></li>
+                <li><a class="font-l" href="contact">Contact</a></li>
+                <li><a class="font-l" href="photo">Photo</a></li>
             </ul>
         </div> 
         <div id="content">
             <div id="social-media">
-                <font-awesome-icon :icon="['fa', 'font-awesome']" />
-                <p>@evrovisuals</p>
+                <a href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
             </div>
             <div id="side-nav">
                 <ul>
@@ -22,7 +21,7 @@
             <!-- camera layout -->
             <!-- Top left-->
             <div id="top-left" class="camera-anchor">
-                <p class="name font-l">Evro Visuals</p>
+                <p class="name font-l text-align-left">Evro Visuals</p>
                 <svg class="camera-anchor-lines landscape" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                     <line x1="0" x2="200" y1="0" y2="0" />
                     <line x1="0" x2="0" y1="0" y2="100" />
@@ -132,7 +131,7 @@ export default {
         grid-template-columns: 1fr 4fr 8fr 4fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         max-height: 90vh;
-        max-width: 95vw;
+        width: 95vw;
     }
 
     #social-media{
@@ -140,9 +139,14 @@ export default {
         grid-area: 2/1/3/2;
     }
 
-    #social-media > p {
+    #social-media > a {
         transform: rotate(180deg);
         writing-mode: vertical-lr;
+    }
+
+    #social-media > a:hover{
+        color: #D2A307;
+        transition: 150ms;
     }
 
     #side-nav{
@@ -248,9 +252,39 @@ export default {
         text-align: right;
     }
 
-    /* @media screen and (max-width: 550px) {
-        #content{
-            background-color: blue;
+    @media screen and (min-width: 650px) {
+        .portrait{
+            display: none;
         }
-    } */
+        .landscape{
+            display: block;
+        }
+
+        .font-l{
+            font-size: x-large;
+        }
+
+        .battery > img{
+            width: 48px;
+        }
+
+        #center > img{
+            max-height: 25vh;
+        }
+
+    }
+
+    @media screen and (min-width: 950px) {
+        .font-l{
+            font-size: xx-large;
+        }
+
+        .battery > img{
+            width: 96px;
+        }
+
+        #center > img{
+            max-height: 37vh;
+        }
+    }
 </style>
