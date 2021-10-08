@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <home/>
+    <home/>
   </div>
 </template>
 
@@ -21,6 +22,7 @@ export default {
   src: local("Ikaros"), url("./fonts/Ikaros-Regular.otf") format("truetype");
 }
 #app {
+  overflow-x: hidden;
   font-family: "Ikaros", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
