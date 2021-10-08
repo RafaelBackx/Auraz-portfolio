@@ -3,8 +3,8 @@
         <div id="header">
             <ul>
                 <li><a class="font-l" href="#video">Video</a></li>
-                <li><a class="font-l" href="contact">Contact</a></li>
-                <li><a class="font-l" href="photo">Photo</a></li>
+                <li><a class="font-l" href="#contact">Contact</a></li>
+                <li><a class="font-l" href="#photo">Photo</a></li>
             </ul>
         </div> 
         <div id="content">
@@ -195,7 +195,7 @@ export default {
     }
 
     .top{
-        justify-content: flex-start !important;
+        justify-content: flex-end !important;
     }
 
     .landscape{
