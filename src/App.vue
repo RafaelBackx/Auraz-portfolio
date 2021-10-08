@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <home/>
+    <videos/>
   </div>
 </template>
 
 <script>
 import Home from './components/Home.vue'
-
+import Videos from './components/video-component/Videos.vue'
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    Videos
   }
 }
 </script>

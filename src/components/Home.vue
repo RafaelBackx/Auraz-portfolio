@@ -2,9 +2,9 @@
     <div id="home">
         <div id="header">
             <ul>
-                <li><a class="font-l" href="#video">Video</a></li>
-                <li><a class="font-l" href="#contact">Contact</a></li>
-                <li><a class="font-l" href="#photo">Photo</a></li>
+                <li><a class="font-m" href="#video">Video</a></li>
+                <li><a class="font-m" href="#contact">Contact</a></li>
+                <li><a class="font-m" href="#photo">Photo</a></li>
             </ul>
         </div> 
         <div id="content">
@@ -70,7 +70,7 @@
                     F2.8
                 </p>
                 <div class="bottom-center-text">
-                    <p class="bg-white color-black p-1 font-l">M.M.</p>
+                    <p class="bg-white color-black p-1 font-l mr-25">M.M.</p>
                     <p class="font-l">-1.7</p>
                 </div>
             </div>
@@ -267,7 +267,15 @@ export default {
         transition: 150ms;
     }
 
+    .mr-25{
+        margin-right: 0.25em;
+    }
+
     @media screen and (min-width: 650px) {
+        #header > ul{
+            width: 40%;
+        }
+
         .portrait{
             display: none;
         }
