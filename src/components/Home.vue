@@ -9,18 +9,18 @@
         </div> 
         <div id="content">
             <div id="social-media">
-                <a href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
+                <a class="font-m hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
             </div>
             <div id="side-nav">
                 <ul>
-                    <li><a href="#video">01</a></li>
-                    <li><a href="#photo">02</a></li>
-                    <li><a href="#contact">03</a></li>
+                    <li><a class="font-m hover" href="#video">01</a></li>
+                    <li><a class="font-m hover" href="#photo">02</a></li>
+                    <li><a class="font-m hover" href="#contact">03</a></li>
                 </ul>
             </div>
             <!-- camera layout -->
             <!-- Top left-->
-            <div id="top-left" class="camera-anchor">
+            <div id="top-left" class="top camera-anchor">
                 <p class="name font-l text-align-left">Evro Visuals</p>
                 <svg class="camera-anchor-lines landscape" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                     <line x1="0" x2="200" y1="0" y2="0" />
@@ -32,7 +32,7 @@
                 </svg>
             </div>
             <!-- Top right -->
-            <div id="top-right" class="camera-anchor">
+            <div id="top-right" class="top camera-anchor">
                 <div class="battery">
                     <img src="../assets/images/battery.png">
                     <p class="font-l">
@@ -144,14 +144,20 @@ export default {
         writing-mode: vertical-lr;
     }
 
-    #social-media > a:hover{
-        color: #D2A307;
-        transition: 150ms;
-    }
-
     #side-nav{
         margin: auto;
         grid-area: 2/5/3/6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    #side-nav > ul {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     #top-left{
@@ -186,6 +192,10 @@ export default {
 
     .bottom{
         justify-content: flex-end !important;
+    }
+
+    .top{
+        justify-content: flex-start !important;
     }
 
     .landscape{
@@ -252,6 +262,11 @@ export default {
         text-align: right;
     }
 
+    .hover:hover{
+        color: #D2A307;
+        transition: 150ms;
+    }
+
     @media screen and (min-width: 650px) {
         .portrait{
             display: none;
@@ -272,6 +287,10 @@ export default {
             max-height: 25vh;
         }
 
+        .font-m{
+            font-size: large;
+        }
+
     }
 
     @media screen and (min-width: 950px) {
@@ -285,6 +304,10 @@ export default {
 
         #center > img{
             max-height: 37vh;
+        }
+
+        .font-m{
+            font-size: x-large;
         }
     }
 </style>
