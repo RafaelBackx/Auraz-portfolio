@@ -34,6 +34,10 @@ export default {
         padding: 0.5em 0;
     }
 
+    .yt-url{
+        display: none;
+    }
+
     @media screen and (min-width: 650px) {
         #video {
             display: flex;
@@ -57,6 +61,7 @@ export default {
         }
 
         .yt-url{
+            display: block;
             font-size: 1.2vw;
         }
     }
