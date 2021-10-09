@@ -135,29 +135,15 @@ export default {
     }
 
     #social-media{
-        margin: auto;
         grid-area: 2/1/3/2;
     }
 
-    #social-media > a {
-        transform: rotate(180deg);
-        writing-mode: vertical-lr;
-    }
-
     #side-nav{
-        margin: auto;
         grid-area: 2/5/3/6;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
     }
 
     #side-nav > ul {
         height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
     #top-left{
@@ -238,39 +224,6 @@ export default {
         display: flex;
     }
 
-    .bg-white{
-        background-color: #fff;
-    }
-
-    .p-1{
-        padding: 0.1em;
-    }
-
-    .mb-50{
-        margin-bottom: 0.5em;
-    }
-
-    .color-black{
-        color: #000;
-    }
-
-    .text-align-left{
-        text-align: left;
-    }
-
-    .text-align-right{
-        text-align: right;
-    }
-
-    .hover:hover{
-        color: #D2A307;
-        transition: 150ms;
-    }
-
-    .mr-25{
-        margin-right: 0.25em;
-    }
-
     @media screen and (min-width: 650px) {
         #header > ul{
             width: 40%;
@@ -283,10 +236,6 @@ export default {
             display: block;
         }
 
-        .font-l{
-            font-size: x-large;
-        }
-
         .battery > img{
             width: 48px;
         }
@@ -294,28 +243,15 @@ export default {
         #center > img{
             max-height: 25vh;
         }
-
-        .font-m{
-            font-size: large;
-        }
-
     }
 
     @media screen and (min-width: 950px) {
-        .font-l{
-            font-size: xx-large;
-        }
-
         .battery > img{
             width: 96px;
         }
 
         #center > img{
             max-height: 37vh;
-        }
-
-        .font-m{
-            font-size: x-large;
         }
     }
 </style>
