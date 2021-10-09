@@ -50,6 +50,10 @@ export default {
     font-size: small;
   }
 
+  .font-xs{
+    font-size: x-small;
+  }
+
   @media screen and (min-width: 650px) {
     .font-l{
         font-size: x-large;
@@ -61,6 +65,10 @@ export default {
 
     .font-s{
       font-size: medium;
+    }
+
+    .font-xs{
+      font-size: small;
     }
   }
 
@@ -74,6 +82,10 @@ export default {
 
     .font-s{
       font-size: large;
+    }
+
+    .font-xs{
+      font-size: medium;
     }
   }
 

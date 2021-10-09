@@ -2,8 +2,8 @@
     <div id="videos">
         <div id="header">
             <div id="title">
-                <h1 class="title-primary">Video</h1>
-                <h3><a class="title-secondary" href="#video">See all</a></h3>
+                <h1 class="title-primary font-l">Video</h1>
+                <h3><a class="title-secondary font-l" href="#video">See all</a></h3>
             </div>
         </div>
         <div id="social-media">
