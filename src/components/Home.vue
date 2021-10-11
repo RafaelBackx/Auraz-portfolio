@@ -190,7 +190,6 @@ export default {
 
     .camera-anchor{
         display: flex;
-        gap: 1vh;
         flex-direction: column;
         justify-content: space-between;
     }

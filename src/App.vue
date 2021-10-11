@@ -2,17 +2,20 @@
   <div id="app">
     <home/>
     <videos/>
+    <contact/>
   </div>
 </template>
 
 <script>
 import Home from './components/Home.vue'
 import Videos from './components/video-component/Videos.vue'
+import Contact from './components/Contact.vue'
 export default {
   name: 'App',
   components: {
     Home,
-    Videos
+    Videos,
+    Contact
   }
 }
 </script>
@@ -22,6 +25,11 @@ export default {
     font-family: "Ikaros";
     src: local("Ikaros"), url("./fonts/Ikaros-Regular.otf") format("truetype");
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
   #app {
     overflow-x: hidden;
     font-family: "Ikaros", sans-serif;
@@ -30,7 +38,9 @@ export default {
     text-align: center;
     color: #fff;
     background-color: #000;
-    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 
   a{

@@ -41,7 +41,6 @@ export default {
         display: grid;
         grid-template-columns: 1fr 16fr 1fr;
         grid-template-rows: 1fr 15fr;
-        padding: 1em 0;
     }
 
     #header{
