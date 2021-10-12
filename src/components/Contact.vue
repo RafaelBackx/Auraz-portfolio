@@ -136,11 +136,11 @@ export default {
         }
 
         #form{
-            flex-basis: 70%;
+            flex-basis: 60%;
         }
 
         #contact-article{
-            flex-basis: 30%;
+            flex-basis: 40%;
         }
 
         #contact{
