@@ -15,6 +15,8 @@
         </div>
         <div id="contact-content">
             <div id="contact-article">
+                <h3 class="font-l">Let's work !</h3>
+                <br>
                 <p>
                     I'm a kid that has a passion for film making and delivering the absolute best quality content that i can
                 </p>
@@ -51,7 +53,7 @@ export default {
     #contact{
         margin: auto;
         width: 95vw;
-        height: 100vh;
+        height: 75vh;
         display: grid;
         grid-template-columns: 1fr 16fr 1fr;
         grid-template-rows: 1fr 15fr;
@@ -76,7 +78,8 @@ export default {
         grid-area: 2/2/3/3;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+        padding: 0 2em;
     }
 
     #contact-article{
@@ -101,7 +104,8 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 2em;
-        width: 75%;
+        width: 100%;
+        /* width: 75%; */
     }
 
     .form-button{
@@ -109,14 +113,43 @@ export default {
         background-color: #000;
         color: #D2A307;
         border: 2px solid #D2A307;
-        padding: 0.2em;
+        padding: 0.5em;
         cursor: pointer;
     }
 
     .form-button:hover{
         background-color: #D2A307;
         color: #000;
+        font-weight: bold;
         transition: 200ms;
+    }
+
+    @media screen and (min-width: 950px) {
+        #contact-content{
+            flex-direction: row-reverse;
+            gap: 1em;
+            padding: 0;
+        }
+
+        .form-button{
+            width: 5vw;
+        }
+
+        #form{
+            flex-basis: 70%;
+        }
+
+        #contact-article{
+            flex-basis: 30%;
+        }
+
+        #contact{
+            height: 50vh;
+        }
+
+        #contact-article > h3,p{
+            text-align: left;
+        }
     }
 
 </style>
