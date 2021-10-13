@@ -6,7 +6,7 @@
                 <li><a class="font-m" href="#contact">Contact</a></li>
                 <li><a class="font-m" href="#photo">Photo</a></li>
             </ul>
-        </div> 
+        </div>
         <div id="content">
             <div id="social-media">
                 <a class="font-m hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
@@ -86,7 +86,7 @@
                 </svg>
                 <p class="text-align-right font-l">ISO 800</p>
             </div>
-        </div>
+        </div>    
     </div>
 </template>
 
@@ -152,6 +152,7 @@ export default {
 
     #top-right{
         grid-area: 1/4/2/5;
+        align-items: flex-end;
     }
 
     #center{
@@ -174,6 +175,7 @@ export default {
 
     #bottom-right{
         grid-area: 3/4/4/5;
+        align-items: flex-end;
     }
 
     .bottom{
@@ -192,13 +194,13 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        max-height: 25vh;
     }
 
     .camera-anchor-lines{
         flex-basis: 75%;
         stroke-width: 7px;
         stroke: #fff;
-        max-width: 100%;
     }
 
     .battery{
