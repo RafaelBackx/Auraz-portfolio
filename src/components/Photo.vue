@@ -18,7 +18,15 @@
         </div>
 
         <div id="photos">
-
+            <div class="photo-container">
+                <img src="../assets/images/1.jpg" alt="">
+            </div>
+            <div class="photo-container">
+                <img src="../assets/images/2.jpg" alt="">
+            </div>
+            <div class="photo-container">
+                <img src="../assets/images/3.jpg" alt="">
+            </div>
         </div>
     </div>
 </template>
@@ -69,5 +77,30 @@ export default {
         flex-direction: column;
         justify-content: center;
         height: 100%;
+    }
+
+    #photos{
+        grid-area: 2/2/3/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.2em;
+    }
+
+    .photo-container{
+        flex-basis: 33%;
+    }
+
+    .photo-container > img{
+        max-height: 30vh;
+    }
+
+    @media screen and (min-width: 650px) {
+        #photos{
+            flex-direction: row;
+        }
+        .photo-container > img{
+            max-width: 25vw;
+        }
     }
 </style>

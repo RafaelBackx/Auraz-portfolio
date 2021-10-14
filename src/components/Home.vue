@@ -194,13 +194,13 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-height: 25vh;
     }
 
     .camera-anchor-lines{
         flex-basis: 75%;
         stroke-width: 7px;
         stroke: #fff;
+        max-width: 100%;
     }
 
     .battery{
@@ -253,6 +253,10 @@ export default {
 
         #center > img{
             max-height: 37vh;
+        }
+
+        .camera-anchor{
+            max-height: 25vh;
         }
     }
 </style>
