@@ -54,11 +54,6 @@ export default {
         grid-area: 2/1/3/2;
     }
 
-    #social-media > a {
-        transform: rotate(180deg);
-        writing-mode: vertical-lr;
-    }
-
     #side-nav{
         grid-area: 2/3/3/4;
         margin: auto;

@@ -2,6 +2,7 @@
   <div id="app">
     <home/>
     <videos/>
+    <photo/>
     <contact/>
   </div>
 </template>
@@ -9,12 +10,15 @@
 <script>
 import Home from './components/Home.vue'
 import Videos from './components/video-component/Videos.vue'
+import Photo from './components/Photo.vue'
 import Contact from './components/Contact.vue'
+
 export default {
   name: 'App',
   components: {
     Home,
     Videos,
+    Photo,
     Contact
   }
 }
@@ -40,7 +44,7 @@ export default {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 4em;
   }
 
   a{

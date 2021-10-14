@@ -1,6 +1,6 @@
 <template>
     <div id="video">
-        <div id="video-info" class="p-50">
+        <div id="video-info">
             <div class="titles">
                 <p class="title font-l">{{ title }}</p>
                 <p class="artist font-s">{{ artist }}</p>
@@ -57,12 +57,21 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding-bottom: 1em;
         }
 
         .yt-url{
-            display: block;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
             font-size: 1.2vw;
+            flex-basis: 10%;
+        }
+
+        .titles{
+            flex-basis: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 </style>
