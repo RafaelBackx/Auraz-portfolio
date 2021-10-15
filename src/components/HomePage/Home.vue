@@ -2,7 +2,7 @@
     <div id="home">
         <div id="header">
             <ul>
-                <li><a class="font-m" href="#video">Video</a></li>
+                <li><a class="font-m" href="#videos">Video</a></li>
                 <li><a class="font-m" href="#contact">Contact</a></li>
                 <li><a class="font-m" href="#photo">Photo</a></li>
             </ul>
@@ -34,7 +34,7 @@
             <!-- Top right -->
             <div id="top-right" class="top camera-anchor">
                 <div class="battery">
-                    <img src="../assets/images/battery.png">
+                    <img src="../../assets/images/battery.png">
                     <p class="font-l">
                         64%
                     </p>
@@ -50,7 +50,7 @@
             </div>
             <!-- Center -->
             <div id="center">
-                <img src="../assets/images/profile.png" alt="profielfoto">
+                <img src="../../assets/images/profile.png" alt="profielfoto">
             </div>
             <!-- Bottom left -->
             <div id="bottom-left" class="bottom camera-anchor">

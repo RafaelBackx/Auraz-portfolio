@@ -3,7 +3,7 @@
         <div id="header">
             <div id="title">
                 <h1 class="title-primary font-l">Video</h1>
-                <h3><a class="title-secondary font-l" href="#video">See all</a></h3>
+                <h3> <router-link class="title-secondary font-l" to="/videos"> See all </router-link></h3>
             </div>
         </div>
         <div id="social-media">
@@ -37,7 +37,6 @@ export default {
     #videos{
         margin:auto;
         width: 95vw;
-        height: 100vh;
         display: grid;
         grid-template-columns: 1fr 16fr 1fr;
         grid-template-rows: 1fr 15fr;
@@ -87,5 +86,11 @@ export default {
 
     .title-secondary{
         color: #ffffff77;
+    }
+
+    @media screen and (min-width:650px) {
+        #videos{
+            height: 100vh;
+        }
     }
 </style>

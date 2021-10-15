@@ -1,26 +1,13 @@
 <template>
   <div id="app">
-    <home/>
-    <videos/>
-    <photo/>
-    <contact/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
-import Videos from './components/video-component/Videos.vue'
-import Photo from './components/Photo.vue'
-import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
-  components: {
-    Home,
-    Videos,
-    Photo,
-    Contact
-  }
 }
 </script>
 

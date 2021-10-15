@@ -1,18 +1,23 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueRouter from 'vue-router'
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { faCoffee } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
-import { faFontAwesome } from "@fortawesome/free-brands-svg-icons"
+import Home from "./components/HomePage/Page.vue"
+import VideoPage from './components/VideoPage/Videos.vue'
+import PhotoPage from './components/PhotoPage/Photos.vue'
 
-library.add(faCoffee)
-library.add(faFontAwesome)
-
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-
+Vue.use(VueRouter)
 Vue.config.productionTip = false
 
+const routes = [
+  { name: "Home", path: "/", component: Home },
+  { name: "videos", path: "/videos", component: VideoPage },
+  { name: "photos",  path: "/photos", component: PhotoPage }
+]
+
+const router = new VueRouter({routes})
+
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')

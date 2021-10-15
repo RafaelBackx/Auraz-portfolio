@@ -3,7 +3,7 @@
         <div id="header">
             <div id="title">
                 <h1 class="title-primary font-l">Photo</h1>
-                <h3><a class="title-secondary font-l" href="#photo">See all</a></h3>
+                <h3> <router-link to="/photos" class="title-secondary font-l"> See all</router-link></h3>
             </div>
         </div>
         <div id="social-media">
@@ -19,13 +19,13 @@
 
         <div id="photos">
             <div class="photo-container">
-                <img src="../assets/images/1.jpg" alt="">
+                <img src="../../assets/images/1.jpg" alt="">
             </div>
             <div class="photo-container">
-                <img src="../assets/images/2.jpg" alt="">
+                <img src="../../assets/images/2.jpg" alt="">
             </div>
             <div class="photo-container">
-                <img src="../assets/images/3.jpg" alt="">
+                <img src="../../assets/images/3.jpg" alt="">
             </div>
         </div>
     </div>
@@ -89,6 +89,8 @@ export default {
 
     .photo-container{
         flex-basis: 33%;
+        display: flex;
+        justify-content: center;
     }
 
     .photo-container > img{
@@ -98,9 +100,14 @@ export default {
     @media screen and (min-width: 650px) {
         #photos{
             flex-direction: row;
+            padding: 0;
         }
+        .photo-container{
+            justify-content: flex-start;
+        }
+
         .photo-container > img{
-            max-width: 25vw;
+            max-height: 25vw;
         }
     }
 </style>
