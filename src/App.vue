@@ -39,6 +39,10 @@ export default {
     color: #fff;
   }
 
+  .font-xxl{
+    font-size: xx-large;
+  }
+
   .font-l{
     font-size: large;
   }
@@ -55,7 +59,7 @@ export default {
     font-size: x-small;
   }
 
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 650px) {  
     .font-l{
         font-size: x-large;
     }

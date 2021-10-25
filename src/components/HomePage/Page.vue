@@ -1,23 +1,17 @@
 <template>
   <div id="portfolio">
     <home/>
-    <videos/>
-    <photo/>
-    <contact/>
+    <info/>
   </div>
 </template>
 
 <script>
 import Home from './Home.vue'
-import Videos from './video-component/Videos.vue'
-import Photo from './Photo.vue'
-import Contact from './Contact.vue'
+import Info from './Info.vue'
 export default {    
   components: {
     Home,
-    Videos,
-    Photo,
-    Contact
+    Info
   }
 }
 </script>

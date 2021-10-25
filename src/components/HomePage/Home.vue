@@ -11,13 +11,6 @@
             <div id="social-media">
                 <a class="font-m hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
             </div>
-            <div id="side-nav">
-                <ul>
-                    <li><a class="font-m hover" href="#video">01</a></li>
-                    <li><a class="font-m hover" href="#photo">02</a></li>
-                    <li><a class="font-m hover" href="#contact">03</a></li>
-                </ul>
-            </div>
             <!-- camera layout -->
             <!-- Top left-->
             <div id="top-left" class="top camera-anchor">
@@ -136,14 +129,6 @@ export default {
 
     #social-media{
         grid-area: 2/1/3/2;
-    }
-
-    #side-nav{
-        grid-area: 2/5/3/6;
-    }
-
-    #side-nav > ul {
-        height: 50%;
     }
 
     #top-left{
