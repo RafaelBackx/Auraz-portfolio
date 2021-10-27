@@ -1,11 +1,7 @@
 <template>
     <div id="home">
         <div id="header">
-            <ul>
-                <li><a class="font-m" href="#videos">Video</a></li>
-                <li><a class="font-m" href="#contact">Contact</a></li>
-                <li><a class="font-m" href="#photo">Photo</a></li>
-            </ul>
+            <a href="/"><img class="img" src="../../assets/images/logo.png" alt=""></a>
         </div>
         <div id="content">
             <div id="social-media">
@@ -210,6 +206,10 @@ export default {
         display: flex;
     }
 
+    .img{
+        max-height: 7vh;
+    }
+
     @media screen and (min-width: 650px) {
         #header > ul{
             width: 40%;
@@ -242,6 +242,10 @@ export default {
 
         .camera-anchor{
             max-height: 25vh;
+        }
+
+        .img{
+            max-height: 10vh;
         }
     }
 </style>
