@@ -54,6 +54,10 @@ export default {
 </script>
 
 <style scoped>
+    #Header{
+        margin-top: 3vh;
+    }
+
     #photo-page{
         width: 100vw;
         height: 100vh;
