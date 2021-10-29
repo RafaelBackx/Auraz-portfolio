@@ -1,7 +1,7 @@
 <template>
     <div id="info">
         <div id="social-media">
-            <a class="font-m hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
+            <a class="font-m hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>evrovisuals</a>
         </div>
         <div id="content">
             <about-me/>

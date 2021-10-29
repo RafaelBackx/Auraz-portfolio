@@ -1,7 +1,7 @@
 <template>
 <div id="photo-page">
     <div id="Header">
-        <router-link to="/home">
+        <router-link to="/">
             <img class="logo" src="../../assets/images/logo.png" alt="">
         </router-link>
     </div>
@@ -10,11 +10,11 @@
             <h1 class="font-l text-align-left">Photography</h1>
         </div>
         <div id="social-media">
-            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
-            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
-            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
-            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
-            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
+            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>evrovisuals</a>
+            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>evrovisuals</a>
+            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>evrovisuals</a>
+            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>evrovisuals</a>
+            <a class="font-s hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>evrovisuals</a>
         </div>
         <div id="photos">
             <div class="double">

@@ -1,11 +1,11 @@
 <template>
     <div id="home">
-        <div id="header">
-            <a href="/"><img class="img" src="../../assets/images/logo.png" alt=""></a>
-        </div>
         <div id="content">
+            <div id="header">
+                <a href="/"><img class="img" src="../../assets/images/logo.png" alt=""></a>
+            </div>
             <div id="social-media">
-                <a class="font-m hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>@evrovisuals</a>
+                <a class="font-m hover" href="https://www.instagram.com/evrovisuals/" target="_blank"><i class="fab fa-instagram p-25"></i>evrovisuals</a>
             </div>
             <!-- camera layout -->
             <!-- Top left-->
@@ -98,6 +98,7 @@ export default {
     #header{
         width: 100%;
         max-height: 10vh;
+        grid-area: 1/3/2/4;
     }
 
     #header > ul{

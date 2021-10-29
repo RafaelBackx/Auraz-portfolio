@@ -9,12 +9,12 @@
             <br>
             <p>
                 That's why it's an honor to be chosen for a project by you.
-                trusting me to capture your story on camera.
+                Trusting me to capture your story on camera.
             </p>
             <br>
             <p>
-                Don't hesitate and contact me through my mail adres: <a href="mailto:evrovisuals@outlook.com"><span class="attention">evrovisuals@outlook.com</span></a> or give me a call/text <a href="callto:32+32489030891"> <span class="attention">+32 489 03 08 91 </span></a>for any questions or project ideas
-                I'm also very active on instagram <a href="https://www.instagram.com/evrovisuals/" target="_blank"><span class="attention">@evrovisuals</span></a>
+                Don't hesitate and contact me through my mail adres: <a href="mailto:evrovisuals@outlook.com"><span class="attention">evrovisuals@outlook.com</span></a> or give me a call/text: <a href="callto:32+32489030891"> <span class="attention">+32 489 03 08 91 </span></a>for any questions or project ideas
+                I'm also very active on instagram: <a href="https://www.instagram.com/evrovisuals/" target="_blank"><span class="attention">@evrovisuals</span></a>
             </p>
         </div>
         <img class="img" src="../../assets/images/about_me.jpeg" alt="">
