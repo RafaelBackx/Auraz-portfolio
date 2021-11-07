@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import VModal from 'vue-js-modal'
 
 import Home from "./components/HomePage/Page.vue"
 import PhotoPage from './components/PhotoPage/Photos.vue'
 
 Vue.use(VueRouter)
+Vue.use(VModal)
 Vue.config.productionTip = false
 
 const routes = [

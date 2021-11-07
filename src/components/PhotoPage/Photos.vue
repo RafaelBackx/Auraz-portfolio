@@ -18,29 +18,29 @@
         </div>
         <div id="photos">
             <div class="double">
-                <img src="../../assets/images/photos-1.jpg" alt="">
-                <img src="../../assets/images/photos-2.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-1.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-2.jpg" alt="">
             </div>
             <div class="single">
-                <img src="../../assets/images/photos-landscape-1.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-landscape-1.jpg" alt="">
             </div>
             <div class="single">
-                <img src="../../assets/images/photos-landscape-2.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-landscape-2.jpg" alt="">
             </div>
             <div class="double">
-                <img src="../../assets/images/photos-3.jpg" alt="">
-                <img src="../../assets/images/photos-4.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-3.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-4.jpg" alt="">
             </div>
             <div class="double">
-                <img src="../../assets/images/photos-5.jpg" alt="">
-                <img src="../../assets/images/photos-6.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-5.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-6.jpg" alt="">
             </div>
             <div class="single">
-                <img src="../../assets/images/photos-landscape-3.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-landscape-3.jpg" alt="">
             </div>
             <div class="double">
-                <img src="../../assets/images/photos-7.jpg" alt="">
-                <img src="../../assets/images/photos-8.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-7.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-8.jpg" alt="">
             </div>
         </div>
     </div>
@@ -48,12 +48,26 @@
 </template>
 
 <script>
+import imageModal from './Photo-modal.vue'
 export default {
-    
+    methods : {
+        imgClick(e){
+            let imageSource = e.path[0].src
+            let landscape = imageSource.indexOf("landscape") !== -1
+            let properties = landscape ? {width: '85%', adaptive: true} : { height: '85%', adaptive: true}
+            this.$modal.show(
+                imageModal,
+                {
+                    src: imageSource,
+                },
+                properties
+            )
+        }
+    }
 }
 </script>
 
-<style scoped>
+<style>
     #Header{
         margin-top: 3vh;
     }
@@ -108,14 +122,19 @@ export default {
 
     .double > img{
         max-width: calc(70vw/2);
+        cursor: pointer;
     }
 
     .single > img{
         max-width: 70vw;
+        cursor: pointer;
     }
 
-    @media screen and (min-width: 650px) {
-
+    .vm--modal{
+        width: 85vw !important;
+        height: auto !important;
+        /* height: auto !important; */
+        margin: auto;
     }
 
     @media screen and (min-width: 950px) {
