@@ -134,7 +134,7 @@ export default {
     }
 
     .single > img{
-        max-width: 70vw;
+        max-width: 71vw;
         cursor: pointer;
     }
 
