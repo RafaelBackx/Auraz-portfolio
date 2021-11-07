@@ -42,6 +42,14 @@
                 <img @click="imgClick" src="../../assets/images/photos-7.jpg" alt="">
                 <img @click="imgClick" src="../../assets/images/photos-8.jpg" alt="">
             </div>
+            <div class="double">
+                <img @click="imgClick" src="../../assets/images/photos-9.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-10.jpg" alt="">
+            </div>
+            <div class="double">
+                <img @click="imgClick" src="../../assets/images/photos-11.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-12.jpg" alt="">
+            </div>
         </div>
     </div>
 </div>
