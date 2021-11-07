@@ -21,26 +21,26 @@
                 <img @click="imgClick" src="../../assets/images/photos-1.jpg" alt="">
                 <img @click="imgClick" src="../../assets/images/photos-2.jpg" alt="">
             </div>
-            <div class="single">
-                <img @click="imgClick" src="../../assets/images/photos-landscape-1.jpg" alt="">
-            </div>
-            <div class="single">
-                <img @click="imgClick" src="../../assets/images/photos-landscape-2.jpg" alt="">
-            </div>
             <div class="double">
                 <img @click="imgClick" src="../../assets/images/photos-3.jpg" alt="">
                 <img @click="imgClick" src="../../assets/images/photos-4.jpg" alt="">
+            </div>
+            <div class="single">
+                <img @click="imgClick" src="../../assets/images/photos-landscape-1.jpg" alt="">
             </div>
             <div class="double">
                 <img @click="imgClick" src="../../assets/images/photos-5.jpg" alt="">
                 <img @click="imgClick" src="../../assets/images/photos-6.jpg" alt="">
             </div>
             <div class="single">
-                <img @click="imgClick" src="../../assets/images/photos-landscape-3.jpg" alt="">
+                <img @click="imgClick" src="../../assets/images/photos-landscape-2.jpg" alt="">
             </div>
             <div class="double">
                 <img @click="imgClick" src="../../assets/images/photos-7.jpg" alt="">
                 <img @click="imgClick" src="../../assets/images/photos-8.jpg" alt="">
+            </div>
+            <div class="single">
+                <img @click="imgClick" src="../../assets/images/photos-landscape-3.jpg" alt="">
             </div>
             <div class="double">
                 <img @click="imgClick" src="../../assets/images/photos-9.jpg" alt="">
