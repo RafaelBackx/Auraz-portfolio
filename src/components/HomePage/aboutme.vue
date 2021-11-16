@@ -4,7 +4,7 @@
             <h1 class="font-xxl">Let's work!</h1>
             <br>
             <p>
-                I'm a kid that has a passion for film making and delivering the absolute best quality content that i can.
+                I'm a kid that has a passion for filmmaking and delivering the absolute best quality content that i can.
             </p>
             <br>
             <p>
