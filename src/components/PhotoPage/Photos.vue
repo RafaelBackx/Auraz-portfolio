@@ -1,5 +1,7 @@
 <template>
 <div id="photo-page">
+    <photomodal @close-modal="hideModal" :src="imageSrc">
+    </photomodal>
     <div id="Header">
         <router-link to="/">
             <img class="logo" src="../../assets/images/logo.png" alt="">
@@ -52,26 +54,34 @@
 </template>
 
 <script>
-import imageModal from './Photo-modal.vue'
+import photomodal from './Photo-modal.vue'
 export default {
-    methods : {
-        imgClick(e){
-            let imageSource = e.path[0].src
-            let landscape = imageSource.indexOf("landscape") !== -1
-            let properties = landscape ? {width: '85%', adaptive: true} : { height: '85%', adaptive: true}
-            this.$modal.show(
-                imageModal,
-                {
-                    src: imageSource,
-                },
-                properties
-            )
-        }
+  components: { photomodal },
+  data(){
+      return {
+          imageSrc: ''
+      }
+  },
+  methods: {
+    imgClick(e){
+        this.imageSrc = e.path[0].src
+        let photomodal = document.getElementById("modal")
+        photomodal.style.display = "flex"
+    },
+    hideModal(){
+        let photomodal = document.getElementById("modal")
+        photomodal.style.display = "none"
+        console.log("hiding")
     }
+}
 }
 </script>
 
 <style>
+    #modal{
+        display: none;
+    }
+
     #Header{
         margin-top: 3vh;
     }
@@ -137,7 +147,6 @@ export default {
     .vm--modal{
         width: 85vw !important;
         height: auto !important;
-        /* height: auto !important; */
         margin: auto;
     }
 
