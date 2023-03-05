@@ -1,0 +1,8 @@
+/* This stylesheet is meant for custom styles, on top of The Sylk Template */
+.center{
+    text-align: center;
+}
+
+.lightbox-item{
+    height: 90vh;
+}
